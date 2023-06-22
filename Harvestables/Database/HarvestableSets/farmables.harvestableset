@@ -1,0 +1,71 @@
+{
+   "harvestableList" : [
+      {
+         "col" : "$SURVIVAL_DATA/Harvestables/Collision/Farmables/hvs_farmables_slimyclam_col.obj",
+         "color" : "a0253e",
+         "mass" : 1.0,
+         "material" : "Default",
+         "name" : "hvs_farmables_slimyclam",
+         "renderable" : "$SURVIVAL_DATA/Harvestables/Renderable/Farmables/hvs_farmables_slimyclam.rend",
+         "script" : {
+            "class" : "SlimyClam",
+            "data" : {},
+            "file" : "$CONTENT_DATA/Scripts/game/harvestable/SlimyClam.lua"
+         },
+         "uuid" : "046a8ac8-300b-4e52-91f7-0912d53b2955"
+      },
+      {
+         "col" : "$SURVIVAL_DATA/Harvestables/Collision/Plantables/hvs_plantables_defaultcollision.obj",
+         "collides" : {
+            "body" : false,
+            "character" : false,
+            "melee" : true,
+            "projectile" : false
+         },
+         "mass" : 1.0,
+         "material" : "Default",
+         "name" : "hvs_farmables_pigmentflower",
+         "removable" : true,
+         "renderable" : "$SURVIVAL_DATA/Harvestables/Renderable/Farmables/hvs_farmables_pigmentflower.rend",
+         "script" : {
+            "class" : "PigmentFlower",
+            "data" : {},
+            "file" : "$CONTENT_DATA/Scripts/game/harvestable/PigmentFlower.lua"
+         },
+         "uuid" : "f7567939-d170-437e-b5c4-352ee9d5850d"
+      },
+      {
+         "col" : "$SURVIVAL_DATA/Harvestables/Collision/Plantables/hvs_plantables_defaultcollision.obj",
+         "collides" : {
+            "body" : false,
+            "character" : false,
+            "melee" : true,
+            "projectile" : false
+         },
+         "mass" : 1.0,
+         "material" : "Default",
+         "name" : "hvs_farmables_cottonplant",
+         "renderable" : "$SURVIVAL_DATA/Harvestables/Renderable/Plantables/hvs_plantables_cotton.rend",
+         "script" : {
+            "class" : "CottonPlant",
+            "data" : {},
+            "file" : "$CONTENT_DATA/Scripts/game/harvestable/CottonPlant.lua"
+         },
+         "uuid" : "c591d94b-d7d1-4305-a9dd-76ef06d6fb49"
+      },
+      {
+         "col" : "$SURVIVAL_DATA/Harvestables/Collision/Farmables/hvs_farmables_beehive_col.obj",
+         "color" : "c5a100",
+         "mass" : 10000.0,
+         "material" : "Default",
+         "name" : "hvs_farmables_beehive",
+         "renderable" : "$SURVIVAL_DATA/Harvestables/Renderable/Farmables/hvs_farmables_beehive.rend",
+         "script" : {
+            "class" : "BeeHive",
+            "data" : {},
+            "file" : "$CONTENT_DATA/Scripts/game/harvestable/BeeHive.lua"
+         },
+         "uuid" : "7261bb49-9c63-4097-999a-4dcab9645eb0"
+      }
+   ]
+}

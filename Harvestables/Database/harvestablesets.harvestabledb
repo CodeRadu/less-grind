@@ -1,0 +1,12 @@
+{
+   "harvestableSetList" : [
+      {
+         "categories" : [],
+         "name" : "$CONTENT_DATA/Harvestables/Database/HarvestableSets/farmables.harvestableset"
+      },
+      {
+         "categories" : [],
+         "name" : "$CONTENT_DATA/Harvestables/Database/HarvestableSets/plantables.harvestableset"
+      }
+   ]
+}

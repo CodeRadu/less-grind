@@ -1,0 +1,6 @@
+{
+   "shapeSetList" : [
+      "$CONTENT_DATA/Objects/Database/ShapeSets/component.shapeset",
+      "$CONTENT_DATA/Objects/Database/ShapeSets/harvests.shapeset"
+   ]
+}

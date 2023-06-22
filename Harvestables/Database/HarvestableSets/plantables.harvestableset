@@ -1,0 +1,31 @@
+{
+   "harvestableList" : [
+      {
+         "col" : "$SURVIVAL_DATA/Harvestables/Collision/Plantables/hvs_plantables_maturetall.obj",
+         "collides" : {
+            "body" : false,
+            "character" : false,
+            "melee" : true,
+            "projectile" : true
+         },
+         "color" : "e9bf04ff",
+         "disableClutter" : true,
+         "mass" : 1.0,
+         "material" : "Default",
+         "name" : "hvs_mature_cotton",
+         "removable" : true,
+         "renderable" : "$SURVIVAL_DATA/Harvestables/Renderable/Plantables/hvs_plantables_cotton.rend",
+         "script" : {
+            "class" : "MatureHarvestable",
+            "data" : {
+               "amount" : 5,
+               "harvest" : "3440440b-d362-4473-aa03-b7c41e1fe7ad",
+               "seed" : "93c27ab2-4930-4654-ba1c-bcfe35e966f6"
+            },
+            "file" : "$SURVIVAL_DATA/Scripts/game/harvestable/MatureHarvestable.lua"
+         },
+         "type" : "mature",
+         "uuid" : "4d923a91-0c98-40f9-ae3f-ef386362ab1c"
+      }
+   ]
+}
