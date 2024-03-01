@@ -84,7 +84,7 @@ function SurvivalGame.server_onCreate(self)
 	g_unitManager:sv_onCreate(self.sv.saved.overworld)
 
 	self.sv.questEntityManager = sm.scriptableObject.createScriptableObject(sm.uuid.new(
-	"c6988ecb-0fc1-4d45-afde-dc583b8b75ee"))
+		"c6988ecb-0fc1-4d45-afde-dc583b8b75ee"))
 
 	self.sv.questManager = sm.storage.load(STORAGE_CHANNEL_QUESTMANAGER)
 	if not self.sv.questManager then
@@ -361,7 +361,7 @@ function SurvivalGame.client_onUpdate(self, dt)
 	local light = 0.0
 	if index < #DAYCYCLE_LIGHTING_TIMES then
 		local p = (self.cl.time.timeOfDay - DAYCYCLE_LIGHTING_TIMES[index]) /
-		(DAYCYCLE_LIGHTING_TIMES[index + 1] - DAYCYCLE_LIGHTING_TIMES[index])
+				(DAYCYCLE_LIGHTING_TIMES[index + 1] - DAYCYCLE_LIGHTING_TIMES[index])
 		light = sm.util.lerp(DAYCYCLE_LIGHTING_VALUES[index], DAYCYCLE_LIGHTING_VALUES[index + 1], p)
 	else
 		light = DAYCYCLE_LIGHTING_VALUES[index]
@@ -380,7 +380,7 @@ function SurvivalGame.cl_onLgChatCommand(self, params)
 		self.sv.saved.data.dev = state
 		sm.log.info("After: " .. tostring(self.sv.saved.data.dev))
 		sm.gui.chatMessage("Set devmode state to " ..
-		tostring(state) .. ". It will take effect the next time you enter the game")
+			tostring(state) .. ". It will take effect the next time you enter the game")
 		save = true -- to escape sandbox violation
 	end
 end
@@ -513,8 +513,13 @@ function SurvivalGame.cl_onChatCommand(self, params)
 			elseif params[2] then
 				harvestableUuid = sm.uuid.new(params[2])
 			end
-			local spawnParams = { world = character:getWorld(), uuid = harvestableUuid, position = character.worldPosition, quat =
-			sm.vec3.getRotation(sm.vec3.new(0, 1, 0), sm.vec3.new(0, 0, 1)) }
+			local spawnParams = {
+				world = character:getWorld(),
+				uuid = harvestableUuid,
+				position = character.worldPosition,
+				quat =
+						sm.vec3.getRotation(sm.vec3.new(0, 1, 0), sm.vec3.new(0, 0, 1))
+			}
 			self.network:sendToServer("sv_spawnHarvestable", spawnParams)
 		end
 	elseif params[1] == "/cleardebug" then
@@ -591,8 +596,12 @@ function SurvivalGame.client_onLoadingScreenLifted(self)
 	self.network:sendToServer("sv_n_loadingScreenLifted")
 	if self.cl.playIntroCinematic then
 		local callbacks = {}
-		callbacks[#callbacks + 1] = { fn = "cl_onCinematicEvent", params = { cinematicName = "cinematic.survivalstart01" }, ref =
-		self }
+		callbacks[#callbacks + 1] = {
+			fn = "cl_onCinematicEvent",
+			params = { cinematicName = "cinematic.survivalstart01" },
+			ref =
+					self
+		}
 		g_effectManager:cl_playNamedCinematic("cinematic.survivalstart01", callbacks)
 	end
 end
