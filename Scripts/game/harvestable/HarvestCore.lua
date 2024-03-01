@@ -4,7 +4,7 @@ dofile("$SURVIVAL_DATA/Scripts/game/survival_units.lua")
 HarvestCore = class(nil)
 HarvestCore.resetStateOnInteract = false
 
-local RefineStaminaCost = 10
+local RefineStaminaCost = 5
 local RefineTime = 2.5
 
 function HarvestCore.server_onCreate(self)
