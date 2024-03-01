@@ -1,7 +1,7 @@
 {
    "allow_add_mods" : true,
    "custom_icons" : false,
-   "description" : "This mod decreases the grind to make your game easier.\r\n\r\n!! READ THIS !!\r\n\r\nAny issues/bugs you encounter should be reported at https://github.com/CodeRadu/less-grind/issues\r\n\r\nFeatures:\r\nCraft component kits\r\nTrade component kits\r\nMore component kits from chests\r\nA LOT more circuit boards from bots\r\nA LOT more glue clams\r\nMore Paint Flowers\r\nMore Cotton\r\nMore Beewax\r\nCheaper Vacuum pumps and Water cannons\r\nDevmode can be toggled using /lgdevmode and rejoining the world (lowercase L, not capital i)\r\nScrap Metal can be crafted from Metal 1\r\nMetal 1 can be crafted from Metal 2\r\nMetal 2 can be crafted from Metal 3\r\nFaster refine times\r\n\r\nMore stuff comming soon!",
+   "description" : "This mod decreases the grind to make your game easier.\n\n!! READ THIS !!\n\nAny issues/bugs you encounter should be reported at https://github.com/CodeRadu/less-grind/issues\n\nFeatures:\nCraft component kits\nTrade component kits\nMore component kits from chests\nA LOT more circuit boards from bots\nA LOT more glue clams\nMore Paint Flowers\nMore Cotton\nMore Beewax\n\nSee more features and plans here: https://github.com/CodeRadu/less-grind/blob/main/README.md\n\nMore stuff comming soon!",
    "fileId" : 2815456037,
    "localId" : "329940be-25a6-4caf-9c35-b310b86ad317",
    "name" : "Less Grind",
