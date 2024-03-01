@@ -28,5 +28,5 @@ If you'd like to contibute to this mod, you may fork it and modify it. Any pull 
 - [x] Metal 1 can be crafted from Metal 2
 - [x] Metal 2 can be crafted from Metal 3
 - [x] Faster refine times
-- [ ] More scrap metal from haybots
-- [ ] More wood from trees
+- [x] More scrap metal from haybots
+- [x] More wood from trees
